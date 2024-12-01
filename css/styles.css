@@ -1,0 +1,275 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.7);
+}
+h1 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21429;
+    letter-spacing: -0.03em;
+    color: #000;
+    margin: 0;
+}
+h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16667;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #111;
+    margin: 0;
+}
+h3 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+}
+div {
+    margin: 0;
+}
+img {
+    margin: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+header {
+    align-items: center;
+}
+section {
+    margin: 0 auto;
+}
+.container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 1136px;
+    margin: 28px auto;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.logo {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.11111;
+    letter-spacing: -0.03em;
+    color: #111;
+    text-decoration: none;
+}
+.navigation-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 24px;
+}
+.navigation-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14286;
+    letter-spacing: -0.02em;
+    color: #111;
+    text-decoration: none;
+}
+.hero-section {
+    border-radius: 30px;
+    width: 1200px;
+    background-color: #1e1823;
+    padding-top: 375px;
+    padding-left: 72px;
+    padding-bottom: 46px;
+    padding-left: 72px;
+}
+.container-hero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 32px;
+}
+.main-title {
+    color: #fff;
+    width: 484px;
+}
+.btn-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 585px;
+}
+.buttons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 14px;
+}
+.btn-buy {
+    border: none;
+    border-radius: 100px;
+    padding: 14px 40px;
+    width: 144px;
+    height: 45px;
+    background: #fd9222;
+    color: #fff;
+}
+.btn-How {
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding: 14px 40px;
+    width: 185px;
+    height: 45px;
+    background-color: transparent;
+    color: #fff;
+}
+.btn-scroll {
+    margin: 13.5px 0;
+    height: 18px;
+    width: 78px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.03em;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.benefits-section {
+    padding-top: 72px;
+    padding-bottom: 100px;
+    justify-items: center;
+}
+.benefits {
+    width: 1200px;
+    background-color: #1e1823;
+    padding: 50px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.benefits-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    gap: 70px;
+    width: 1100px;
+    padding: 0 18px ;
+    margin: 0;
+}
+.benefits-list-title {
+    color: #fff;
+    margin-bottom: 18px;
+}
+.benefits-text {
+    color: rgba(255, 255, 255, 0.7);
+}
+.list-iteam.first {
+    margin-bottom: 18px;
+}
+.ingredients-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 50px;
+}
+.ingredients-description {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 28px;
+    width: 486px;
+}
+.ingredients-title {
+    text-transform: uppercase;
+    margin: 0 37.5px;
+}
+.span-title {
+    color: #fd9222;
+}
+.ingredients-text {
+    color: #111;
+    text-align: center;
+}
+.ingredients-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 19px;
+    padding: 0;
+    margin-bottom: 100px;
+}
+.milk-chocolate {
+    background-color: #fd9222;
+    padding: 28px 32px;
+    border-radius: 15px;
+}
+.ingredients-img {
+    width: 206px;
+    height: 160px;
+    margin-bottom: 36px;
+}
+.milk-chocolate-title {
+    text-transform: uppercase;
+    color:#fff; 
+}
+.milk {
+    border: 1px solid #fd9222;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 28px 32px;
+}
+.milk-title {
+    text-transform: uppercase;
+    color: #111;
+}
+.nuts {
+    border-radius: 15px;
+    padding: 28px 32px;
+    background-color: #1e1823;
+}
+.nuts-title {
+    text-transform: uppercase;
+    color: #fff;
+}
+.semi-sweet-chocolate {
+    border: 1px solid #fd9222;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 28px 32px;
+}
+.semi-sweet-chocolate-title {
+    text-transform: uppercase;
+    color: #111;
+}
