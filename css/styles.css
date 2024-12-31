@@ -5,6 +5,7 @@ body {
     line-height: 1.28571;
     letter-spacing: -0.02em;
     color: rgba(0, 0, 0, 0.7);
+    background-color: #fafafa;
 }
 h1 {
     font-weight: 500;
@@ -38,8 +39,8 @@ button {
     font-size: 14px;
     color: #000;
 }
-div {
-    margin: 0;
+.container {
+    margin: 0 auto;
 }
 img {
     margin: 0;
@@ -47,14 +48,15 @@ img {
 
 ul, ol {
     list-style: none;
+    padding: 0;
 }
+
+/* Header */
 header {
     align-items: center;
 }
-section {
-    margin: 0 auto;
-}
-.container-header {
+
+.header-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,6 +66,7 @@ section {
     padding-top: 2px;
     padding-bottom: 2px;
 }
+
 .logo {
     font-style: italic;
     font-weight: 700;
@@ -73,6 +76,11 @@ section {
     color: #111;
     text-decoration: none;
 }
+
+.logo-style {
+    font-style: italic;
+}
+
 .navigation-list {
     display: flex;
     align-items: center;
@@ -80,6 +88,7 @@ section {
     flex-direction: row;
     gap: 24px;
 }
+
 .navigation-link {
     font-weight: 500;
     font-size: 14px;
@@ -88,50 +97,52 @@ section {
     color: #111;
     text-decoration: none;
 }
-.hero-section {
-    border-radius: 30px;
+
+/* Hero */
+
+.container.hero {
+border-radius: 30px;
     width: 1200px;
     background-color: #1e1823;
     padding-top: 375px;
-    padding-left: 72px;
+    padding-right: 72px;
     padding-bottom: 46px;
     padding-left: 72px;
-}
-.container-hero {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 32px;
 }
 .main-title {
     color: #fff;
     width: 484px;
 }
-.btn-list {
+
+.link-list {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     flex-direction: row;
-    gap: 585px;
+    justify-content: space-between;
+    width: 100%;
 }
-.buttons {
+
+.btn-list {
+    width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
     gap: 14px;
+    margin-top: 32px;
 }
+
 .btn-buy {
-    border: none;
     border-radius: 100px;
     padding: 14px 40px;
-    width: 144px;
-    height: 45px;
-    background: #fd9222;
+    border-color: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #fd9222;
     color: #fff;
 }
-.btn-How {
+
+.btn-how {
     border: 1px solid #fff;
     border-radius: 100px;
     padding: 14px 40px;
@@ -140,6 +151,7 @@ section {
     background-color: transparent;
     color: #fff;
 }
+
 .btn-scroll {
     margin: 13.5px 0;
     height: 18px;
@@ -153,15 +165,14 @@ section {
     border: none;
     padding: 0;
 }
-.benefits-section {
-    padding-top: 72px;
-    padding-bottom: 100px;
-    justify-items: center;
-}
-.benefits {
+
+/*benefits*/
+
+.container.benefits {
     width: 1200px;
     background-color: #1e1823;
     padding: 50px;
+    margin-top: 72px;
 }
 .visually-hidden {
     position: absolute;
@@ -195,12 +206,15 @@ section {
 .list-iteam.first {
     margin-bottom: 18px;
 }
-.ingredients-section {
+
+/*ingredients*/
+.container.ingredients {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     gap: 50px;
+    margin-top: 100px;
 }
 .ingredients-description {
     display: flex;
@@ -272,4 +286,33 @@ section {
 .semi-sweet-chocolate-title {
     text-transform: uppercase;
     color: #111;
+}
+
+/* Reception */
+
+.container.reception {
+    margin-top: 100px;
+    padding: 0 32px;
+}
+
+.reception-title {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.how-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.reception-img {
+    border-radius: 15px;
+}
+.text-container {
+    border-radius: 15px;
+    width: 516px;
+    height: 400px;
+    background-color: #fff;
+    padding: 32px;
 }
