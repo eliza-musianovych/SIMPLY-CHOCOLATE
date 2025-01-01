@@ -311,8 +311,48 @@ border-radius: 30px;
 }
 .text-container {
     border-radius: 15px;
-    width: 516px;
-    height: 400px;
+    width: 452px;
+    height: 336px;
     background-color: #fff;
     padding: 32px;
+}
+
+.reception-title-text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33333;
+    color: #111;
+    margin-bottom: 28px;
+    width: 350px;
+}
+
+.reception-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 24px;
+    padding-right: 26px;
+}
+
+.list-items {
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    color: #111;
+    padding-left: 16px;
+}
+
+.list-items::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4c4c4c;
+    border: 1px solid #eceded;
 }
