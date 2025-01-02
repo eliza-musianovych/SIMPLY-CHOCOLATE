@@ -51,6 +51,10 @@ ul, ol {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Header */
 header {
     align-items: center;
@@ -168,11 +172,14 @@ border-radius: 30px;
 
 /*benefits*/
 
+.benefits-section {
+    padding-top: 72px;
+}
+
 .container.benefits {
     width: 1200px;
     background-color: #1e1823;
     padding: 50px;
-    margin-top: 72px;
 }
 .visually-hidden {
     position: absolute;
@@ -208,13 +215,17 @@ border-radius: 30px;
 }
 
 /*ingredients*/
+
+.ingredients-section {
+    padding-top: 100px;
+}
+
 .container.ingredients {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     gap: 50px;
-    margin-top: 100px;
 }
 .ingredients-description {
     display: flex;
@@ -290,8 +301,11 @@ border-radius: 30px;
 
 /* Reception */
 
+.reception-section {
+    padding-top: 100px;
+}
+
 .container.reception {
-    margin-top: 100px;
     padding: 0 32px;
 }
 
@@ -355,4 +369,142 @@ border-radius: 30px;
     border-radius: 50%;
     background-color: #4c4c4c;
     border: 1px solid #eceded;
+}
+
+/* Reviews */
+
+.reviews-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.container.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.review-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16667;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.reviews-list {
+    display: flex;
+    gap: 28px;
+}
+
+.reviews-iteam {
+    margin-top: 42px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    width: 312px;
+    height: 120px;
+    position: relative;
+    padding: 56px 24px 24px 24px;
+    box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+}
+
+.reviews-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.reviews-img-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33333;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.reviews-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.review-btn {
+    border: 1px solid #fd9222;
+    border-radius: 100px;
+    padding: 14px 40px;
+    width: 222px;
+    height: 50px;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 18px;
+    color: #111;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #1e1823;
+    padding: 50px 19px 86px 32px;
+}
+
+.top-line-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-title {
+    max-width: 300px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21429;
+    letter-spacing: -0.02em;
+    color: #fff;
+    text-align: left;
+}
+
+.contact {
+    font-style: normal;
+}
+
+.contact-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.contact-list-item:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.contact-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 24px;
+    padding-top: 24px;
+    margin: 0;
+}
+
+.footer-nav-link {
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14286;
+    letter-spacing: -0.02em;
 }
