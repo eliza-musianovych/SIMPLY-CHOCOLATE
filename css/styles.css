@@ -100,6 +100,12 @@ header {
     letter-spacing: -0.02em;
     color: #111;
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+    color:#fd9222;
 }
 
 /* Hero */
@@ -113,6 +119,7 @@ border-radius: 30px;
     padding-bottom: 46px;
     padding-left: 72px;
 }
+
 .main-title {
     color: #fff;
     width: 484px;
@@ -144,6 +151,13 @@ border-radius: 30px;
     font-size: 14px;
     background-color: #fd9222;
     color: #fff;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-buy:hover,
+.btn-buy:focus {
+    color:#fd9222;
+    background-color: #fcf1e0;
 }
 
 .btn-how {
@@ -154,20 +168,30 @@ border-radius: 30px;
     height: 45px;
     background-color: transparent;
     color: #fff;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-how:hover,
+.btn-how:active {
+    color:#fd9222;
+    border-color: #fd9222;
 }
 
 .btn-scroll {
     margin: 13.5px 0;
-    height: 18px;
-    width: 78px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.28571;
     letter-spacing: -0.03em;
     color: #fff;
-    background-color: transparent;
-    border: none;
     padding: 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-scroll:hover,
+.btn-scroll:active {
+    color:#fd9222;
 }
 
 /*benefits*/
@@ -181,6 +205,7 @@ border-radius: 30px;
     background-color: #1e1823;
     padding: 50px;
 }
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -193,6 +218,7 @@ border-radius: 30px;
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 .benefits-list {
     display: flex;
     align-items: flex-start;
@@ -203,13 +229,16 @@ border-radius: 30px;
     padding: 0 18px ;
     margin: 0;
 }
+
 .benefits-list-title {
     color: #fff;
     margin-bottom: 18px;
 }
+
 .benefits-text {
     color: rgba(255, 255, 255, 0.7);
 }
+
 .list-iteam.first {
     margin-bottom: 18px;
 }
@@ -227,6 +256,7 @@ border-radius: 30px;
     flex-direction: column;
     gap: 50px;
 }
+
 .ingredients-description {
     display: flex;
     align-items: center;
@@ -235,17 +265,21 @@ border-radius: 30px;
     gap: 28px;
     width: 486px;
 }
+
 .ingredients-title {
     text-transform: uppercase;
     margin: 0 37.5px;
 }
+
 .span-title {
     color: #fd9222;
 }
+
 .ingredients-text {
     color: #111;
     text-align: center;
 }
+
 .ingredients-list {
     display: flex;
     align-items: flex-start;
@@ -255,45 +289,59 @@ border-radius: 30px;
     padding: 0;
     margin-bottom: 100px;
 }
+
+.ingredient {
+    position: relative;
+    overflow: hidden;
+}
+
 .milk-chocolate {
     background-color: #fd9222;
     padding: 28px 32px;
     border-radius: 15px;
 }
+
 .ingredients-img {
     width: 206px;
     height: 160px;
     margin-bottom: 36px;
 }
+
 .milk-chocolate-title {
     text-transform: uppercase;
     color:#fff; 
 }
+
 .milk {
     border: 1px solid #fd9222;
     border-radius: 15px;
     background-color: #fff;
     padding: 28px 32px;
 }
+
 .milk-title {
     text-transform: uppercase;
     color: #111;
 }
+
 .nuts {
     border-radius: 15px;
     padding: 28px 32px;
     background-color: #1e1823;
 }
+
 .nuts-title {
     text-transform: uppercase;
     color: #fff;
 }
+
 .semi-sweet-chocolate {
     border: 1px solid #fd9222;
     border-radius: 15px;
     background-color: #fff;
     padding: 28px 32px;
 }
+
 .semi-sweet-chocolate-title {
     text-transform: uppercase;
     color: #111;
@@ -323,6 +371,7 @@ border-radius: 30px;
 .reception-img {
     border-radius: 15px;
 }
+
 .text-container {
     border-radius: 15px;
     width: 452px;
@@ -446,6 +495,12 @@ border-radius: 30px;
     color: #111;
 }
 
+.review-btn:hover,
+.review-btn:active {
+    color: #fff;
+    background-color: #fd9222;
+}
+
 /* Footer */
 
 .footer {
@@ -494,6 +549,11 @@ border-radius: 30px;
     color: #fff;
 }
 
+.contact-link:hover,
+.contact-link:focus {
+    color: #fd9222;
+}
+
 .footer-nav {
     display: flex;
     gap: 24px;
@@ -507,4 +567,9 @@ border-radius: 30px;
     font-size: 14px;
     line-height: 1.14286;
     letter-spacing: -0.02em;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+    color: #fd9222;
 }
