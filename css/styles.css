@@ -26,8 +26,6 @@ h2 {
 }
 h3 {
     font-weight: 600;
-    font-size: 18px;
-    color: #000;
     margin: 0;
 }
 p {
@@ -111,8 +109,9 @@ header {
 /* Hero */
 
 .container.hero {
-border-radius: 30px;
+    border-radius: 30px;
     width: 1200px;
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/hero_background.jpg);
     background-color: #1e1823;
     padding-top: 375px;
     padding-right: 72px;
@@ -145,8 +144,9 @@ border-radius: 30px;
 
 .btn-buy {
     border-radius: 100px;
+    border: none;
+    min-width: 144px;
     padding: 14px 40px;
-    border-color: transparent;
     font-weight: 600;
     font-size: 14px;
     background-color: #fd9222;
@@ -293,58 +293,94 @@ border-radius: 30px;
 .ingredient {
     position: relative;
     overflow: hidden;
+    width: calc((100% - 57px) / 4);
+    border-radius: 15px;
+    padding: 28px 32px;
+    border: 1px solid #fd9222;
 }
 
-.milk-chocolate {
+.ingredient:nth-child(4n-1) {
+    background-color: #1e1823;
+    color: #fff;
+    border-color: #1e1823;
+}
+.ingredient:nth-child(4n+1) {
+    color: #fff;
     background-color: #fd9222;
-    padding: 28px 32px;
+}
+
+.ingredient:nth-child(even) {
+    background-color: #fff;
+}
+
+.list-title-ingredients {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.overlay {
+    padding: 20px;
+    position: absolute;
+    background-color: #fff;
+    color: #111;
+    transform: translateY(100%);
+    top: 0;
+    left: 0;
     border-radius: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ingredient:hover .overlay {
+    transform: translateY(0%);
+}
+
+.overlay-title {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.overlay-categories {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+.overlay-categories-item {
+    border-radius: 35px;
+    padding: 6px 16px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+}
+
+.categories-primary {
+    background-color: #fd9222;
+    color: #fff;
+}
+
+.categories-benefits {
+    border-color: #fd9222;
+    background-color: #fafafa; 
+}
+
+.overlay-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
 }
 
 .ingredients-img {
     width: 206px;
     height: 160px;
     margin-bottom: 36px;
-}
-
-.milk-chocolate-title {
-    text-transform: uppercase;
-    color:#fff; 
-}
-
-.milk {
-    border: 1px solid #fd9222;
-    border-radius: 15px;
-    background-color: #fff;
-    padding: 28px 32px;
-}
-
-.milk-title {
-    text-transform: uppercase;
-    color: #111;
-}
-
-.nuts {
-    border-radius: 15px;
-    padding: 28px 32px;
-    background-color: #1e1823;
-}
-
-.nuts-title {
-    text-transform: uppercase;
-    color: #fff;
-}
-
-.semi-sweet-chocolate {
-    border: 1px solid #fd9222;
-    border-radius: 15px;
-    background-color: #fff;
-    padding: 28px 32px;
-}
-
-.semi-sweet-chocolate-title {
-    text-transform: uppercase;
-    color: #111;
 }
 
 /* Reception */
