@@ -39,6 +39,7 @@ button {
 }
 .container {
     margin: 0 auto;
+    max-width: 1200px;
 }
 img {
     margin: 0;
@@ -58,15 +59,26 @@ header {
     align-items: center;
 }
 
+.container.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 32px;
+}
+
+.social-list {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+
 .header-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    width: 1136px;
-    margin: 28px auto;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    margin-right: 90px;
 }
 
 .logo {
